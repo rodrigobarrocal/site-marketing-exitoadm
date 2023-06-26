@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Basic Page Needs -->
+	<meta charset="iso-8859-1">
+	<title>Quiz Mobile</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="libs/Skeleton-2.0.4/css/normalize.css">
+	<link rel="stylesheet" href="libs/Skeleton-2.0.4/css/skeleton.css">
+	<!-- CSS Rocket -->
+	<link rel="stylesheet" type="text/css" href="styles/rocket.prod.css">
+	<style>
+	.container-header {
+		background-color: #336699;
+	}
+	</style>
+	<!-- Cliente CSS -->
+	<link rel="stylesheet" type="text/css" href="styles/gochk/css/gochk.css">
+	<!-- /Cliente CSS -->
+</head>
+
+<body>
+	<section class="container-header">
+		<div class="logo" style="background-image: url('https://img-rocket.cmsw.com/logo_padrao_quiz.png');"></div>
+	</section>
+	<section>
+		<div class="container center">
+			<div class="row">
+				<div class="eight columns offset-by-two container-farewell-text">
+					<p>Obrigado, aguarde estamos verificando seu cadastro.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="eight columns offset-by-two container-button-iniciar"></div>
+			</div>
+		</div>
+	</section>
+	<script src="libs/jQuery/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			window.setTimeout(function(){
+				window.location.replace("http://gochk-admin.com/ciente/quiz-return.jsp");
+				// window.location.replace("http://gochk-admin.com/ciencia/quiz-retorno.php");
+			}, 8000);
+		});
+	</script>
+</body>
+
+</html>
